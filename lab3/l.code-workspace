@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Documents/Web-Dev"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../task1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "lab3"
+	}
+}

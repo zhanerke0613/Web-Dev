@@ -1,10 +1,9 @@
-//task1.Is it possible to create functions A and B so that new A() == new B()? Answer: yes
-let obj = {};
+//1
 function A() { return obj; }
 function B() { return obj; }
-alert( new A() == new B() ); // true
+alert( new A() == new B() ); 
 
-//task2.Create new Calculator
+//2
 function Calculator() {
     this.read = function() {
       this.a = +prompt('a?', 0);
@@ -22,7 +21,7 @@ function Calculator() {
   alert( "Sum=" + calculator.sum() );
   alert( "Mul=" + calculator.mul() );
 
-//task3.Create new Accumulator
+//3
 function Accumulator(startingValue) {
     this.value = startingValue;
     this.read = function() {

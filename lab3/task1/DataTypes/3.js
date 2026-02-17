@@ -1,11 +1,11 @@
-//task1.
+//1
 function ucFirst(str) {
     if (!str) return str;
     return str[0].toUpperCase() + str.slice(1);
   }
-  alert( ucFirst("john") ); // John
+  alert( ucFirst("john") ); 
 
-//task2.Check for spam
+//2
 function checkSpam(str) {
     let lowerStr = str.toLowerCase();
     return lowerStr.includes('viagra') || lowerStr.includes('xxx');
@@ -14,13 +14,13 @@ function checkSpam(str) {
   alert( checkSpam('free xxxxx') );
   alert( checkSpam("innocent rabbit") );
 
-//task3.Truncate the text
+//3
 function truncate(str, maxlength) {
     return (str.length > maxlength) ?
       str.slice(0, maxlength - 1) + '…' : str;
   }
 
-//task4.Extract the money
+//4
 function extractCurrencyValue(str) {
     return +str.slice(1);
   }

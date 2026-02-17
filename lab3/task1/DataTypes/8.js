@@ -1,4 +1,4 @@
-//task1.
+//1
 let messages = [
     {text: "Hello", from: "John"},
     {text: "How goes?", from: "John"},
@@ -11,7 +11,7 @@ let messages = [
   alert("Read message 0: " + readMessages.has(messages[0])); 
   messages.shift();
 
-//task2.
+//2
 let messagess = [
     {text: "Hello", from: "John"},
     {text: "How goes?", from: "John"},

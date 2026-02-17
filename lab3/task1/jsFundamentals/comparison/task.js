@@ -6,4 +6,3 @@ undefined === null
 null == "\n0\n"
 null === +"\n0\n"
 
-//true, false, true, true, false, false, false

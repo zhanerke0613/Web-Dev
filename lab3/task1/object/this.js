@@ -7,10 +7,9 @@ function makeUser() {
   
   let user = makeUser();
   
-  alert( user.ref.name ); // What's the result?
+  alert( user.ref.name ); 
 
-//error, this doesnt work like that
-//it should be more like this:
+//it should be 
 function makeUser() {
     return {
         name: "John",
@@ -52,7 +51,7 @@ let ladder = {
       this.step--;
       return this;
     },
-    showStep: function() { // shows the current step
+    showStep: function() { 
       alert( this.step );
       return this;
     }

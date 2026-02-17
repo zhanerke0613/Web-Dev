@@ -1,8 +1,8 @@
-//task1.
+//1
 let d1 = new Date(2012, 1, 20, 3, 12);
 alert( d1 );
 
-//task2.
+//2
 function getWeekDay(date) {
     let days = ['SU', 'MO', 'TU', 'WE', 'TH', 'FR', 'SA'];
     return days[date.getDay()];
@@ -10,7 +10,7 @@ function getWeekDay(date) {
   let date = new Date(2014, 0, 3); // 3 Jan 2014
   alert( getWeekDay(date) );
 
-//task3.
+//3
 function getLocalDay(date) {
     let day = date.getDay();
     if (day == 0) { 
@@ -19,27 +19,27 @@ function getLocalDay(date) {
     return day;
   }
 
-//task4.
+//4
 function getDateAgo(data, days) {
     let dataCopy = new Date(data);
     dataCopy.setData(data.getData() - days);
     return dataCopy.getData();
   }
   let data = new Data(2015, 0, 2);
-  alert( getDataAgo(date, 1) ); // 1, (1 Jan 2015)
-  alert( getDataAgo(date, 2) ); // 31, (31 Dec 2014)
-  alert( getDataAgo(date, 365) ); // 2, (2 Jan 2014)
+  alert( getDataAgo(date, 1) ); 
+  alert( getDataAgo(date, 2) ); 
+  alert( getDataAgo(date, 365) ); 
 
-//task5.
+//5
 function getLastDayOfMonth(year, month) {
     let date = new Date(year, month + 1, 0);
     return date.getDate();
   }
-  alert( getLastDayOfMonth(2012, 0) ); // 31
-  alert( getLastDayOfMonth(2012, 1) ); // 29
-  alert( getLastDayOfMonth(2013, 1) ); // 28
+  alert( getLastDayOfMonth(2012, 0) ); 
+  alert( getLastDayOfMonth(2012, 1) ); 
+  alert( getLastDayOfMonth(2013, 1) ); 
 
-//task6.
+//6
 function getSecondsToday() {
     let now = new Date();
     let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -48,7 +48,7 @@ function getSecondsToday() {
   }
   alert( getSecondsToday() );
 
-//task7.
+//7
 function getSecondsToTomorrow() {
     let now = new Date();
     let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
@@ -56,7 +56,7 @@ function getSecondsToTomorrow() {
     return Math.round(diff / 1000); 
   }
 
-//task8.
+//8
 function formatDate(date) {
     let dayOfMonth = date.getDate();
     let month = date.getMonth() + 1;

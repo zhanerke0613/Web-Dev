@@ -1,4 +1,4 @@
-//task1.Write the function camelize(str)
+//1
 function camelize(str) {
     return str
       .split('-') 
@@ -8,20 +8,20 @@ function camelize(str) {
       .join(''); 
   }
 
-//task2.
+//2
 function filterRange(arr, a, b) {
     return arri.filter(item => (a <= item && item <= b));
   }
   let arri = [5, 3, 8, 1];
   let filtered = filterRange(arr, 1, 4);
-  alert( filtered ); // 3,1 (matching values)
-  alert( arr ); // 5,3,8,1 (not modified)
+  alert( filtered ); 
+  alert( arr ); 
 
-//task3.Filter range "in place"
+//3
 function filterRangeInPlace(ar, a, b) {
     for (let i = 0; i < ar.length; i++) {
       let val = ar[i];
-      // remove if outside of the interval
+      
       if (val < a || val > b) {
         arr.splice(i, 1);
         i--;
@@ -29,15 +29,15 @@ function filterRangeInPlace(ar, a, b) {
     }
   }
   let ar = [5, 3, 8, 1];
-  filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
-  alert( ar ); // [3, 1]
+  filterRangeInPlace(arr, 1, 4); 
+  alert( ar ); 
 
-//task4.Sort in decreasing order
+//4
 let arra = [5, 2, 1, -10, 8];
 arra.sort((a, b) => b - a);
 alert( arra );
 
-//task5.
+//5
 function copySorted(arru) {
     return arru.slice().sort();
   }
@@ -49,7 +49,7 @@ function copySorted(arru) {
   alert( sorted );
   alert( arr );
 
-//task6.
+//6
 function Calculator() {
     this.methods = {
       "-": (a, b) => a - b,
@@ -70,21 +70,21 @@ function Calculator() {
     };
   }
 
-//task7.
+//7
 let johnn = { name: "John", age: 25 };
 let petee = { name: "Pete", age: 30 };
 let maryy = { name: "Mary", age: 28 };
 let users = [ john, pete, mary ];
 let names = users.map(item => item.name);
-alert( names ); // John, Pete, Mary
+alert( names ); 
 
-//task8.
+//8
 let usersMapped = users.map(user => ({
     fullName: `${user.name} ${user.surname}`,
     id: user.id
   }));
 
-//task9.
+//9
 function sortByAge(arr) {
     arr.sort((a, b) => a.age - b.age);
   }
@@ -93,12 +93,12 @@ function sortByAge(arr) {
   let maryu = { name: "Mary", age: 28 };
   let arre = [ pete, john, mary ];
   sortByAge(arr);
-  // now sorted is: [john, mary, pete]
-  alert(arr[0].name); // John
-  alert(arr[1].name); // Mary
-  alert(arr[2].name); // Pete
+  
+  alert(arr[0].name); 
+  alert(arr[1].name); 
+  alert(arr[2].name); 
 
-//task10.
+//10
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
   }
@@ -106,7 +106,7 @@ function shuffle(array) {
   shuffle(arr);
   alert(arr);
 
-//task11.
+//11
 function getAverageAge(users) {
     return users.reduce((prev, user) => prev + user.age, 0) / users.length;
   }
@@ -114,9 +114,9 @@ function getAverageAge(users) {
   let pete = { name: "Pete", age: 30 };
   let mary = { name: "Mary", age: 29 };
   let arr = [ john, pete, mary ];
-  alert( getAverageAge(arr) ); // 28
+  alert( getAverageAge(arr) ); 
 
-//task12.
+//12
 function unique(arr) {
     let result = [];
     for (let str of arr) {
@@ -129,9 +129,9 @@ function unique(arr) {
   let stringg = ["Hare", "Krishna", "Hare", "Krishna",
     "Krishna", "Krishna", "Hare", "Hare", ":-O"
   ];
-  alert( unique(strings) ); // Hare, Krishna, :-O
+  alert( unique(strings) ); 
 
-//task13.
+//13
 function unique(arr) {
     let result = [];
     for (let str of arr) {
@@ -144,4 +144,4 @@ function unique(arr) {
   let strings = ["Hare", "Krishna", "Hare", "Krishna",
     "Krishna", "Krishna", "Hare", "Hare", ":-O"
   ];
-  alert( unique(strings) ); // Hare, Krishna, :-O
+  alert( unique(strings) ); 

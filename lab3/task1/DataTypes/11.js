@@ -1,14 +1,14 @@
-//task1.
+//1
 let user = {
     nname: "John",
     years: 30
   };
   let {nname, years: age, isAdmin = false} = user;
-  alert(nname ); // John
-  alert( age ); // 30
-  alert( isAdmin ); // false
+  alert(nname ); 
+  alert( age ); 
+  alert( isAdmin ); 
 
-//task2.
+//2
 function topSalary(salaries) {
     let maxSalary = 0;
     let maxName = null;

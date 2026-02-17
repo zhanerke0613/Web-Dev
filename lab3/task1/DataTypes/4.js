@@ -1,28 +1,28 @@
-//task1.rray copied?
+//1
 let fruits = ["Apples", "Pear", "Orange"];
 
-// push a new value into the "copy"
+
 let shoppingCart = fruits;
 shoppingCart.push("Banana");
 
-// what's in fruits?
-alert( fruits.length ); //4
 
-//task2.Let’s try 5 array operations.
+alert( fruits.length ); 
+
+//2
 let styles = ["Jazz", "Blues"];
 styles.push("Rock-n-Roll");
 styles[Math.floor((styles.length - 1) / 2)] = "Classics";
 alert( styles.shift() );
 styles.unshift("Rap", "Reggae");
 
-//task3.Calling in an array context
+//3
 let arr = ["a", "b"];
 arr.push(function() {
   alert( this );
 })
-arr[2](); // a,b,function(){...}
+arr[2](); 
 
-//task4.Sum input numbers
+//4
 function sumInput() {
     let numbers = [];
     while (true) {
@@ -38,7 +38,7 @@ function sumInput() {
   }
   alert( sumInput() );
 
-//task5.A maximal subarray
+//5
 function getMaxSubSum(arr) {
     let maxSum = 0;
     let partialSum = 0;

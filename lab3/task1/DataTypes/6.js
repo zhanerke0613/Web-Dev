@@ -1,9 +1,9 @@
-//task1.Filter unique array members
+//1
 function unique(arr) {
     return Array.from(new Set(arr));
   }
 
-//task2.Filter anagrams
+//2
 function aclean(arr) {
     let obj = {};
     for (let i = 0; i < arr.length; i++) {
@@ -15,7 +15,7 @@ function aclean(arr) {
   let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
   alert( aclean(arr) );
 
-//task3.Iterable keys
+//3
 let map = new Map();
 map.set("name", "John");
 let keys = Array.from(map.keys());

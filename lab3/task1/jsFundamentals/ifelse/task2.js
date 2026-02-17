@@ -1,7 +1,7 @@
 let name = promt("What is the official name of JavaScript?", "");
 
 if(name == "ECMAScript"){
-    alert("Right!");
+    alert("Correct!");
 } else {
-    alert("You don't know? ECMAScript!");
+    alert("It is ECMAScript!");
 }
